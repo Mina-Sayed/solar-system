@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
 mongoose.connect(process.env.MONGO_URL, {
-    user: process.env.MONGOUSER,
-    pass: process.env.MONGOPASSWORD,
+    // user: process.env.MONGOUSER,
+    // pass: process.env.MONGOPASSWORD,
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function(err) {
