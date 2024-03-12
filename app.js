@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect('mongodb://mongo:CTfXfxUOPgRFdeTNHwYriXIqdSlooPnu@monorail.proxy.rlwy.net:54088', {
     // user: process.env.MONGOUSER,
     // pass: process.env.MONGOPASSWORD,
     useNewUrlParser: true,
